@@ -1,0 +1,112 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  animation: fadeIn 0.6s ease-out;
+}
+
+
+form div {
+  margin-bottom: 20px;
+}
+
+
+form label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  display: block;
+  text-transform: uppercase;
+}
+
+
+form input[type="text"],
+form input[type="file"],
+form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+form input[type="text"],
+form input[type="file"] {
+  margin-top: 5px;
+  font-family: 'Arial', sans-serif;
+}
+
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease;
+  padding: 14px;
+  border-radius: 6px;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+
+form button:active {
+  background-color: #00408d;
+  transform: translateY(0);
+}
+
+
+form input[type="text"]:focus,
+form input[type="file"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+
+form input[type="text"].error,
+form input[type="file"].error {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.4);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+form input[type="text"],
+form input[type="file"] {
+  margin-bottom: 15px;
+}
+
+
+form .form-header {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
